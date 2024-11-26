@@ -1,11 +1,19 @@
+import java.util.Scanner;
+
 public class ornek3 {
     public static void main(String[] args) {
 
-            int toplam = 0;
-            for (int i = 1; i <= 100; i++) {
-                toplam += i;
-            }
-            System.out.println("1'den 100'e kadar sayıların toplamı " + toplam);
+
+    }
+    public static int farkHesapla(int s1, int s2) {
+
+        if (s1 > s2) {
+         return   s1 - s2;
         }
+        else {
+            return s2- s1;
+        }
+
     }
 
+}

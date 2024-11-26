@@ -2,14 +2,17 @@ import java.util.Scanner;
 
 public class ornek2 {
     public static void main(String[] args) {
+        Scanner oku=new Scanner(System.in);
+        int sayi1;
+        System.out.print("1.sayi");
+        sayi1= oku.nextInt();
 
-        Scanner scanner = new Scanner(System.in);
-        int toplam = 0;
-
-        System.out.println("Lütfen 10 tane sayı girin:");
-        for (int i = 0; i < 10; i++) {
-            int sayi = scanner.nextInt();
-            toplam += sayi;
-        }
+        int kare=kareal(sayi1);
+        System.out.println("kareal :"+kare);
     }
+    private static int kareal(int sayi1){
+        int sonuc=sayi1*sayi1;
+        return sonuc;
+    }
+
 }
