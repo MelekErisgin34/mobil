@@ -2,139 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginHorizontal="10dp"
-    android:layout_marginTop="20dp"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/editTextText_Dersadi"
+        android:layout_width="404dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
 
-        <CheckBox
-            android:id="@+id/checkBox_sarma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Yaprak Sarma" />
+    <EditText
+        android:id="@+id/et_not1"
+        android:layout_width="402dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="61dp" />
 
-        <EditText
-            android:id="@+id/editTextNumber_sarma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/et_not2"
+        android:layout_width="399dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="133dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:id="@+id/checkBox_corba"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:text="Çorba" />
-
-        <EditText
-            android:id="@+id/editTextNumber_corba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:id="@+id/checkBox_kofte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Köfte" />
-
-        <EditText
-            android:id="@+id/editTextNumber_kofte"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:id="@+id/checkBox_pilav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Pilav" />
-
-        <EditText
-            android:id="@+id/editTextNumber_pilav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:id="@+id/checkBox_sutlac"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sütlaç" />
-
-        <EditText
-            android:id="@+id/editTextNumber_sutlac"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button_siparis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sipariş Ver" />
-
-    <TextView
-        android:id="@+id/textView_ozet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Sipariş Özeti :" />
-
+    <ListView
+        android:id="@+id/lv_dersler"
+        android:layout_width="409dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="178dp" />
 </LinearLayout>
